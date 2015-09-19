@@ -4,15 +4,15 @@ public class TextBook {
     // write your code here
 
     Author schildt = new Author("Herbert Schildt", "herbert@schildt.com");
-    System.out.println(schildt.getName()+"at"+schildt.getEmail());
+    System.out.println(schildt.getName()+" at "+schildt.getEmail());
     Author bjarne = new Author("Bjarne Stroustrup");
     bjarne.setEmail("bjarne@bjarne.com");
     bjarne.print();
 
-    Book b1 = new Book("Teach Yourself C++", schildt);
+    Book b1 = new Book("Herbert Schildt", schildt);
     b1.setPrice(150.5);
     b1.setStock(50);
-    System.out.println("Author"+b1.getAuthorName()+" Name: "+b1.getName()+" Price: "+b1.getPrice()+" Stock: "+b1.getStock());
+    System.out.println("Author: "+b1.getAuthorName()+" Name: "+b1.getName()+" Price: "+b1.getPrice()+" Stock: "+b1.getStock());
     b1.borrowBook(20);
     b1.returnBook(10);
 
