@@ -40,7 +40,7 @@ public class Book{
     else
       System.out.println("you can borrow");
   }
-  public Book(string name, Author author)
+  public Book(String name, Author author)
   {
     this.name=name; this.author=author;
   }
@@ -48,7 +48,7 @@ public class Book{
   {
     this.price=price;
   }
-  public Book(String s1, Author author, double price,int stock)
+  public Book(String name, Author author, double price,int stock)
   {
     this.name=name; this.author=author; this.price=price; this.stock=stock;
   }
